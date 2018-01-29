@@ -60,10 +60,8 @@ end
 def winner(board)
   winner = nil
   win_row = won?(board)
-  puts(won?(board))
   if (win_row != false)
-    winner = win_row[0]
-    puts(win_row[0])
+    winner = board[win_row[0]]
   end
 
   winner
